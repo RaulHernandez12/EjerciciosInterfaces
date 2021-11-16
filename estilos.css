@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'bunge';
+  src: url('Bunge.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+.logo {
+  margin: 0%;
+  text-align: center;
+  font-family: "bunge";
+  font-size: 50px;
+  color: #3A8CE3;
+}
+.deslizar {
+  position: relative;
+}
+.menu {
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+  line-height: 100px;
+  display: flex;
+  font-family: "bunge";
+  font-size: 25px;
+}
+.menu li {
+  list-style: none;
+  flex-grow: 1;
+}
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: #3A8CE3;
+}
