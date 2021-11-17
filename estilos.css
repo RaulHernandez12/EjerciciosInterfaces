@@ -4,6 +4,14 @@
   font-style: normal;
   font-weight: normal;
 }
+.tabla {
+  border: solid;
+  border-color: #3A8CE3;
+  font-size: 25px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
 .logo {
   margin: 0%;
   text-align: center;
@@ -31,4 +39,12 @@
   display: block;
   text-decoration: none;
   color: #3A8CE3;
+}
+table {
+  border: solid;
+  border-color: #3A8CE3;
+  font-size: 25px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
