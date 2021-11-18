@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Tu cine</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="estilos.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            <script src="funciones.js"></script>
+        </head>
+        <body>           
+            <header>                   
+                <h1 class="logo">TU CINE</h1>                   
+                <nav class="deslizar">
+                    <ul class="menu">
+                        <li><a href="portada.html">PORTADA</a></li>
+                        <li><a href="peliculas.html">TODAS LAS PELICULAS</a></li>
+                        <li><a href="horarios.html">HORARIOS</a></li>                            
+                        <li><a href="precios.html">PRECIOS</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <table class="butacas">
+                <tr>
+                    <td></td>                   
+                    <td>1</td>
+                    <td>2</td> 
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td> 
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td onclick="cambiar(0)"  class="libre"></td>
+                    <td onclick="cambiar(1)"  class="libre"></td> 
+                    <td onclick="cambiar(2)"  class="libre"></td>
+                    <td onclick="cambiar(3)"  class="libre"></td>
+                    <td onclick="cambiar(4)"  class="libre"></td>
+                    <td onclick="cambiar(5)"  class="libre"></td>
+                    <td onclick="cambiar(6)"  class="libre"></td>
+                    <td onclick="cambiar(7)"  class="libre"></td>
+                    <td onclick="cambiar(8)"  class="libre"></td>
+                    <td onclick="cambiar(9)"  class="libre"></td>
+                    <td onclick="cambiar(10)"  class="libre"></td>
+                    <td onclick="cambiar(11)"  class="libre"></td>
+                    <td onclick="cambiar(12)"  class="libre"></td>
+                    <td onclick="cambiar(13)"  class="libre"></td>
+                    <td onclick="cambiar(14)"  class="libre"></td>
+                    <td onclick="cambiar(15)"  class="libre"></td>
+                    <td onclick="cambiar(16)"  class="libre"></td>
+                    <td onclick="cambiar(17)"  class="libre"></td>
+                    <td onclick="cambiar(18)"  class="libre"></td>
+                    <td onclick="cambiar(19)"  class="libre"></td>
+                     
+                </tr>
+            
+                <tr>
+                    <td>2</td>
+                    <td onclick="cambiar(20)" class ="libre"></td>
+                    <td onclick="cambiar(21)"  class="libre"></td>
+                    <td onclick="cambiar(22)"  class="libre"></td> 
+                    <td onclick="cambiar(23)"  class="libre"></td>
+                    <td onclick="cambiar(24)"  class="libre"></td>
+                    <td></td>
+                    <td></td>
+                    <td onclick="cambiar(25)"  class="libre"></td>
+                    <td onclick="cambiar(26)"  class="libre"></td>
+                    <td onclick="cambiar(27)"  class="libre"></td>
+                    <td onclick="cambiar(28)"  class="libre"></td>
+                    <td onclick="cambiar(29)"  class="libre"></td>
+                    <td onclick="cambiar(30)"  class="libre"></td>
+                    <td></td>
+                    <td></td>
+                    <td onclick="cambiar(31)"  class="libre"></td>
+                    <td onclick="cambiar(32)"  class="libre"></td>
+                    <td onclick="cambiar(33)"  class="libre"></td>
+                    <td onclick="cambiar(34)"  class="libre"></td>
+                    <td onclick="cambiar(35)"  class="libre"></td>
+                                         
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td onclick="cambiar(36)" class ="libre"></td>
+                    <td onclick="cambiar(37)"  class="libre"></td>
+                    <td onclick="cambiar(38)"  class="libre"></td> 
+                    <td onclick="cambiar(39)"  class="libre"></td>
+                    <td onclick="cambiar(40)"  class="libre"></td>
+                    <td></td>
+                    <td></td>
+                    <td onclick="cambiar(41)"  class="libre"></td>
+                    <td onclick="cambiar(42)"  class="libre"></td>
+                    <td onclick="cambiar(43)"  class="libre"></td>
+                    <td onclick="cambiar(44)"  class="libre"></td>
+                    <td onclick="cambiar(45)"  class="libre"></td>
+                    <td onclick="cambiar(46)"  class="libre"></td>
+                    <td></td>
+                    <td></td>
+                    <td onclick="cambiar(47)"  class="libre"></td>
+                    <td onclick="cambiar(48)"  class="libre"></td>
+                    <td onclick="cambiar(49)"  class="libre"></td>
+                    <td onclick="cambiar(50)"  class="libre"></td>
+                    <td onclick="cambiar(51)"  class="libre"></td>
+                                          
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td onclick="cambiar(52)" class ="libre"></td>
+                    <td onclick="cambiar(53)"  class="libre"></td>
+                    <td onclick="cambiar(54)"  class="libre"></td> 
+                    <td onclick="cambiar(55)"  class="libre"></td>
+                    <td onclick="cambiar(56)"  class="libre"></td>
+                    <td></td>
+                    <td></td>
+                    <td onclick="cambiar(57)"  class="libre"></td>
+                    <td onclick="cambiar(58)"  class="libre"></td>
+                    <td onclick="cambiar(59)"  class="libre"></td>
+                    <td onclick="cambiar(60)"  class="libre"></td>
+                    <td onclick="cambiar(61)"  class="libre"></td>
+                    <td onclick="cambiar(62)"  class="libre"></td>
+                    <td></td>
+                    <td></td>
+                    <td onclick="cambiar(63)"  class="libre"></td>
+                    <td onclick="cambiar(64)"  class="libre"></td>
+                    <td onclick="cambiar(65)"  class="libre"></td>
+                    <td onclick="cambiar(66)"  class="libre"></td>
+                    <td onclick="cambiar(67)"  class="libre"></td>                     
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td onclick="cambiar(68)" class ="libre"></td>
+                    <td onclick="cambiar(69)"  class="libre"></td>
+                    <td onclick="cambiar(70)"  class="libre"></td> 
+                    <td onclick="cambiar(71)"  class="libre"></td>
+                    <td onclick="cambiar(72)"  class="libre"></td>
+                    <td></td>
+                    <td></td>
+                    <td onclick="cambiar(73)"  class="libre"></td>
+                    <td onclick="cambiar(74)"  class="libre"></td>
+                    <td onclick="cambiar(75)"  class="libre"></td>
+                    <td onclick="cambiar(76)"  class="libre"></td>
+                    <td onclick="cambiar(77)"  class="libre"></td>
+                    <td onclick="cambiar(78)"  class="libre"></td>
+                    <td></td>
+                    <td></td>
+                    <td onclick="cambiar(79)"  class="libre"></td>
+                    <td onclick="cambiar(80)"  class="libre"></td>
+                    <td onclick="cambiar(81)"  class="libre"></td>
+                    <td onclick="cambiar(82)"  class="libre"></td>
+                    <td onclick="cambiar(83)"  class="libre"></td>                      
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td onclick="cambiar(84)" class ="libre"></td>                    
+                    <td onclick="cambiar(85)"  class="libre"></td> 
+                    <td onclick="cambiar(86)"  class="libre"></td>
+                    <td onclick="cambiar(87)"  class="libre"></td>
+                    <td onclick="cambiar(88)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                    
+                    <td onclick="cambiar(89)"  class="libre"></td>
+                    <td onclick="cambiar(90)"  class="libre"></td>
+                    <td onclick="cambiar(91)"  class="libre"></td>
+                    <td onclick="cambiar(92)"  class="libre"></td>
+                    <td onclick="cambiar(93)"  class="libre"></td>
+                    <td onclick="cambiar(94)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                   
+                    <td onclick="cambiar(95)"  class="libre"></td>
+                    <td onclick="cambiar(96)"  class="libre"></td>
+                    <td onclick="cambiar(97)"  class="libre"></td>
+                    <td onclick="cambiar(98)"  class="libre"></td>
+                    <td onclick="cambiar(99)"  class="libre"></td>                     
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td onclick="cambiar(100)" class ="libre"></td>                    
+                    <td onclick="cambiar(101)"  class="libre"></td> 
+                    <td onclick="cambiar(102)"  class="libre"></td>
+                    <td onclick="cambiar(103)"  class="libre"></td>
+                    <td onclick="cambiar(104)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                    
+                    <td onclick="cambiar(105)"  class="libre"></td>
+                    <td onclick="cambiar(106)"  class="libre"></td>
+                    <td onclick="cambiar(107)"  class="libre"></td>
+                    <td onclick="cambiar(108)"  class="libre"></td>
+                    <td onclick="cambiar(109)"  class="libre"></td>
+                    <td onclick="cambiar(110)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                   
+                    <td onclick="cambiar(111)"  class="libre"></td>
+                    <td onclick="cambiar(112)"  class="libre"></td>
+                    <td onclick="cambiar(113)"  class="libre"></td>
+                    <td onclick="cambiar(114)"  class="libre"></td>
+                    <td onclick="cambiar(115)"  class="libre"></td>                      
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td onclick="cambiar(116)" class ="libre"></td>                    
+                    <td onclick="cambiar(117)"  class="libre"></td> 
+                    <td onclick="cambiar(118)"  class="libre"></td>
+                    <td onclick="cambiar(119)"  class="libre"></td>
+                    <td onclick="cambiar(120)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                    
+                    <td onclick="cambiar(121)"  class="libre"></td>
+                    <td onclick="cambiar(122)"  class="libre"></td>
+                    <td onclick="cambiar(123)"  class="libre"></td>
+                    <td onclick="cambiar(124)"  class="libre"></td>
+                    <td onclick="cambiar(125)"  class="libre"></td>
+                    <td onclick="cambiar(126)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                   
+                    <td onclick="cambiar(127)"  class="libre"></td>
+                    <td onclick="cambiar(128)"  class="libre"></td>
+                    <td onclick="cambiar(129)"  class="libre"></td>
+                    <td onclick="cambiar(130)"  class="libre"></td>
+                    <td onclick="cambiar(131)"  class="libre"></td>                    
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td onclick="cambiar(132)" class ="libre"></td>                    
+                    <td onclick="cambiar(133)"  class="libre"></td> 
+                    <td onclick="cambiar(134)"  class="libre"></td>
+                    <td onclick="cambiar(135)"  class="libre"></td>
+                    <td onclick="cambiar(136)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                    
+                    <td onclick="cambiar(137)"  class="libre"></td>
+                    <td onclick="cambiar(138)"  class="libre"></td>
+                    <td onclick="cambiar(139)"  class="libre"></td>
+                    <td onclick="cambiar(140)"  class="libre"></td>
+                    <td onclick="cambiar(141)"  class="libre"></td>
+                    <td onclick="cambiar(142)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                   
+                    <td onclick="cambiar(143)"  class="libre"></td>
+                    <td onclick="cambiar(144)"  class="libre"></td>
+                    <td onclick="cambiar(145)"  class="libre"></td>
+                    <td onclick="cambiar(146)"  class="libre"></td>
+                    <td onclick="cambiar(147)"  class="libre"></td>                      
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td onclick="cambiar(148)" class ="libre"></td>                    
+                    <td onclick="cambiar(149)"  class="libre"></td> 
+                    <td onclick="cambiar(150)"  class="libre"></td>
+                    <td onclick="cambiar(151)"  class="libre"></td>
+                    <td onclick="cambiar(152)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                    
+                    <td onclick="cambiar(153)"  class="libre"></td>
+                    <td onclick="cambiar(154)"  class="libre"></td>
+                    <td onclick="cambiar(155)"  class="libre"></td>
+                    <td onclick="cambiar(156)"  class="libre"></td>
+                    <td onclick="cambiar(157)"  class="libre"></td>
+                    <td onclick="cambiar(158)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                   
+                    <td onclick="cambiar(159)"  class="libre"></td>
+                    <td onclick="cambiar(160)"  class="libre"></td>
+                    <td onclick="cambiar(161)"  class="libre"></td>
+                    <td onclick="cambiar(162)"  class="libre"></td>
+                    <td onclick="cambiar(163)"  class="libre"></td>                     
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td onclick="cambiar(164)" class ="libre"></td>                    
+                    <td onclick="cambiar(165)"  class="libre"></td> 
+                    <td onclick="cambiar(166)"  class="libre"></td>
+                    <td onclick="cambiar(167)"  class="libre"></td>
+                    <td onclick="cambiar(168)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                    
+                    <td onclick="cambiar(169)"  class="libre"></td>
+                    <td onclick="cambiar(170)"  class="libre"></td>
+                    <td onclick="cambiar(171)"  class="libre"></td>
+                    <td onclick="cambiar(172)"  class="libre"></td>
+                    <td onclick="cambiar(173)"  class="libre"></td>
+                    <td onclick="cambiar(174)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                   
+                    <td onclick="cambiar(175)"  class="libre"></td>
+                    <td onclick="cambiar(176)"  class="libre"></td>
+                    <td onclick="cambiar(177)"  class="libre"></td>
+                    <td onclick="cambiar(178)"  class="libre"></td>
+                    <td onclick="cambiar(179)"  class="libre"></td>                    
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td onclick="cambiar(180)" class ="libre"></td>                    
+                    <td onclick="cambiar(181)"  class="libre"></td> 
+                    <td onclick="cambiar(182)"  class="libre"></td>
+                    <td onclick="cambiar(183)"  class="libre"></td>
+                    <td onclick="cambiar(184)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                    
+                    <td onclick="cambiar(185)"  class="libre"></td>
+                    <td onclick="cambiar(186)"  class="libre"></td>
+                    <td onclick="cambiar(187)"  class="libre"></td>
+                    <td onclick="cambiar(188)"  class="libre"></td>
+                    <td onclick="cambiar(189)"  class="libre"></td>
+                    <td onclick="cambiar(190)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                   
+                    <td onclick="cambiar(191)"  class="libre"></td>
+                    <td onclick="cambiar(192)"  class="libre"></td>
+                    <td onclick="cambiar(193)"  class="libre"></td>
+                    <td onclick="cambiar(194)"  class="libre"></td>
+                    <td onclick="cambiar(195)"  class="libre"></td>                     
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td onclick="cambiar(196)" class ="libre"></td>                    
+                    <td onclick="cambiar(197)"  class="libre"></td> 
+                    <td onclick="cambiar(198)"  class="libre"></td>
+                    <td onclick="cambiar(199)"  class="libre"></td>
+                    <td onclick="cambiar(200)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                    
+                    <td onclick="cambiar(201)"  class="libre"></td>
+                    <td onclick="cambiar(202)"  class="libre"></td>
+                    <td onclick="cambiar(203)"  class="libre"></td>
+                    <td onclick="cambiar(204)"  class="libre"></td>
+                    <td onclick="cambiar(205)"  class="libre"></td>
+                    <td onclick="cambiar(206)"  class="libre"></td>
+                    <td></td>
+                    <td></td>
+                    <td onclick="cambiar(207)"  class="libre"></td>                   
+                    <td onclick="cambiar(208)"  class="libre"></td>
+                    <td onclick="cambiar(209)"  class="libre"></td>
+                    <td onclick="cambiar(210)"  class="libre"></td>
+                    <td onclick="cambiar(211)"  class="libre"></td>
+                                          
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td onclick="cambiar(212)" class ="libre"></td>                    
+                    <td onclick="cambiar(213)"  class="libre"></td> 
+                    <td onclick="cambiar(214)"  class="libre"></td>
+                    <td onclick="cambiar(215)"  class="libre"></td>
+                    <td onclick="cambiar(216)"  class="libre"></td>
+                    <td></td>
+                    <td></td>                    
+                    <td onclick="cambiar(217)"  class="libre"></td>
+                    <td onclick="cambiar(218)"  class="libre"></td>
+                    <td onclick="cambiar(219)"  class="libre"></td>
+                    <td onclick="cambiar(220)"  class="libre"></td>
+                    <td onclick="cambiar(221)"  class="libre"></td>
+                    <td onclick="cambiar(222)"  class="libre"></td>
+                    <td></td>
+                    <td></td>
+                    <td onclick="cambiar(223)"  class="libre"></td>                   
+                    <td onclick="cambiar(224)"  class="libre"></td>
+                    <td onclick="cambiar(225)"  class="libre"></td>
+                    <td onclick="cambiar(226)"  class="libre"></td>
+                    <td onclick="cambiar(227)"  class="libre"></td>                   
+                </tr>
+            </table>
+            <p id="entradas"></p>
+
+        </body>
+    </html>

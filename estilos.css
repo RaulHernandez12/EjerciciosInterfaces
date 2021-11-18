@@ -4,6 +4,12 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: 'merienda';
+  src: url('Merienda-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
 .tabla {
   border: solid;
   border-color: #3A8CE3;
@@ -12,6 +18,9 @@
   margin: auto;
   text-align: center;
 }
+header {
+  height: 15vh;
+}
 .logo {
   margin: 0%;
   text-align: center;
@@ -19,9 +28,11 @@
   font-size: 50px;
   color: #3A8CE3;
 }
-.deslizar {
-  position: relative;
-}
+/*.deslizar{
+    position: fixed;
+    width: 100%;
+    
+}*/
 .menu {
   margin: 0;
   padding: 0px;
@@ -47,4 +58,45 @@ table {
   width: 80%;
   margin: auto;
   text-align: center;
+}
+.pelicula {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.pelicula .texto {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.pelicula .texto p {
+  position: relative;
+  top: 20%;
+  font-family: "merienda";
+}
+.pelicula .img {
+  width: 20%;
+}
+.pelicula .img img {
+  width: 100%;
+}
+.eternal {
+  display: flex;
+}
+.libre {
+  cursor: pointer;
+  background-image: url("imagenes/Libre.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.seleccionado {
+  cursor: pointer;
+  background-image: url("imagenes/Seleccionado.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.butacas tr td {
+  width: 50px;
+  height: 45px;
 }

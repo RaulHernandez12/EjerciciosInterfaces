@@ -4,15 +4,22 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: 'merienda';
+    src: url('Merienda-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
 
+@letraTexto:"merienda";
 @letra:"bunge"; 
 @titulo:50px;
 @azul:#3A8CE3;
 @tamanio:25px;
 @centrar: center;
+@borde : solid 1px @azul;
 
 .tabla{
-    
     border: solid;
     border-color: @azul;
     font-size: @tamanio;
@@ -20,6 +27,13 @@
     margin: auto;
     text-align: @centrar;
 }
+
+
+header{
+    height: 15vh;
+
+}
+
 
 
 .logo{   
@@ -30,10 +44,13 @@
     color: @azul;
 }
 
-.deslizar{
-    position: relative;
+/*.deslizar{
+    position: fixed;
+    width: 100%;
     
-}
+}*/
+
+
 
 .menu{
     margin: 0;
@@ -43,27 +60,73 @@
     display: flex;
     font-family: @letra;
     font-size: @tamanio;
-}
 
-.menu{
-    li {
-        list-style: none;   
-        flex-grow: 1;
-    }   
+        li {
+            list-style: none;   
+            flex-grow: 1;
+            a{
+                display: block;
+                text-decoration: none;  
+                color:@azul;   
+            } 
+        }   
 } 
 
-.menu{ 
-    li{
-        a{
-            display: block;
-            text-decoration: none;  
-            color:@azul;   
-        } 
-    }
-}
+
 
 table{
     .tabla
 }
 
 
+.pelicula{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    .texto{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        p{
+            position: relative;
+            top: 20%;
+            font-family: @letraTexto;
+        }
+    }
+    .img{
+        width: 20%;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.eternal{
+    display: flex;
+}
+
+.libre{
+    cursor: pointer;
+    background-image: url("imagenes/Libre.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.seleccionado{
+    cursor: pointer;
+    background-image: url("imagenes/Seleccionado.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.butacas{
+    tr{
+        td{
+            width: 50px;
+            height: 45px;
+        }
+    }
+}
