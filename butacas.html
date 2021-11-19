@@ -15,11 +15,14 @@
                     <ul class="menu">
                         <li><a href="portada.html">PORTADA</a></li>
                         <li><a href="peliculas.html">TODAS LAS PELICULAS</a></li>
-                        <li><a href="horarios.html">HORARIOS</a></li>                            
                         <li><a href="precios.html">PRECIOS</a></li>
+                        <li><a href="#pie">CONTACTAR</a></li> 
                     </ul>
                 </nav>
             </header>
+            <!--<div id="prueba">
+                <button onclick="crearTabla()">Crear Tabla</button>
+            </div>-->         
             <table class="butacas">
                 <tr>
                     <td></td>                   
@@ -372,7 +375,19 @@
                     <td onclick="cambiar(227)"  class="libre"></td>                   
                 </tr>
             </table>
-            <p id="entradas"></p>
+            <div id="entradas"></div>
+            <div class = "finalizar">
+                <button class="boton" onclick="precio()">Calcular precio</button>
+            </div>
+            <div id="calcular">
+
+            </div>
+            <div class="finalizar" id="finalizado">
+                <button class="boton" onclick="finalizar()">Finalizar compra</button>
+            </div>
+            <footer id = "pie">
+
+            </footer> 
 
         </body>
     </html>
