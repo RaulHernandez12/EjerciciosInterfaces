@@ -10,42 +10,51 @@
   font-style: normal;
   font-weight: normal;
 }
+body {
+  background-image: url(https://fondosmil.com/th/20689.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .tabla {
   border: solid;
-  border-color: #3A8CE3;
+  border-color: #304769;
   font-size: 25px;
   width: 80%;
   margin: auto;
   text-align: center;
+}
+.display {
+  display: flex;
+  justify-content: space-around;
 }
 .logo {
   margin: 0%;
   text-align: center;
   font-family: "bunge";
   font-size: 50px;
-  color: #3A8CE3;
+  color: #304769;
 }
 .menu {
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0px;
   text-align: center;
   line-height: 100px;
-  display: flex;
   font-family: "bunge";
   font-size: 25px;
 }
 .menu li {
   list-style: none;
-  flex-grow: 1;
 }
 .menu li a {
-  display: block;
+  color: #304769;
   text-decoration: none;
-  color: #3A8CE3;
 }
 table {
   border: solid;
-  border-color: #3A8CE3;
+  border-color: #304769;
   font-size: 25px;
   width: 80%;
   margin: auto;
@@ -53,19 +62,20 @@ table {
 }
 .pelicula {
   display: flex;
-  width: 100%;
   justify-content: space-around;
+  width: 100%;
   margin-top: 20px;
 }
 .pelicula .texto {
-  width: 75%;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  width: 75%;
+  flex-direction: column;
 }
 .pelicula .texto .horas {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  font-family: "merienda";
 }
 .pelicula .texto .horas select {
   width: 30%;
@@ -78,16 +88,13 @@ table {
 }
 .pelicula .texto .enlaces {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .pelicula .img {
   width: 20%;
 }
 .pelicula .img img {
   width: 100%;
-}
-.eternal {
-  display: flex;
 }
 .libre {
   cursor: pointer;
@@ -105,13 +112,8 @@ table {
   width: 50px;
   height: 45px;
 }
-#entradas {
-  margin-top: 20px;
-  font-family: "merienda";
-  text-align: center;
-}
 .boton {
-  background-color: #3A8CE3;
+  background-color: #304769;
   font-size: 15px;
   font-weight: bold;
   color: white;
@@ -123,8 +125,54 @@ table {
 .halloween {
   margin-bottom: 20px;
 }
-.finalizar {
+.final {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "merienda";
+  color: #304769;
+  font-size: 25px;
+}
+.final ul {
+  list-style: none;
   margin-top: 10px;
+}
+.final img {
+  width: 100%;
+}
+.salas {
+  display: flex;
+  justify-content: space-around;
+  font-family: "merienda";
+  color: #304769;
+}
+.lista {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "merienda";
+  align-items: center;
+}
+.lista .precios {
+  width: 80%;
+  color: #304769;
+  font-size: 25px;
+}
+.lista .precios ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-family: "merienda";
+}
+.lista button {
+  width: 80%;
+  margin-top: 20px;
+}
+.trailer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

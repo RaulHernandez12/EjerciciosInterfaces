@@ -8,21 +8,24 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
             <script src="funciones.js"></script>
         </head>
-        <body>           
+        <body onload="sala()">           
             <header>                   
                 <h1 class="logo">TU CINE</h1>                   
                 <nav class="deslizar">
                     <ul class="menu">
-                        <li><a href="portada.html">PORTADA</a></li>
+                        <li><a id ="a" href="portada.html">PORTADA</a></li>
                         <li><a href="peliculas.html">TODAS LAS PELICULAS</a></li>
-                        <li><a href="precios.html">PRECIOS</a></li>
+                        <li><a href="trailers.html">TRAILERS</a></li>
                         <li><a href="#pie">CONTACTAR</a></li> 
                     </ul>
                 </nav>
             </header>
             <!--<div id="prueba">
                 <button onclick="crearTabla()">Crear Tabla</button>
-            </div>-->         
+            </div>-->     
+            <div  class="salas">
+               <h3   id = "sala"></h3>
+            </div>    
             <table class="butacas">
                 <tr>
                     <td></td>                   
@@ -375,19 +378,43 @@
                     <td onclick="cambiar(227)"  class="libre"></td>                   
                 </tr>
             </table>
-            <div id="entradas"></div>
-            <div class = "finalizar">
+            <div class="lista">
+                <div class= "precios">
+                    <ul>
+                        <li>Lunes,martes y jueves : 6€</li>
+                        <li>Miércoles : 4€</li>
+                        <li>Viernes,Sábado y Domingo: 7,50€</li>
+                    </ul>
+                </div>
+                <div id="entradas"></div>
                 <button class="boton" onclick="precio()">Calcular precio</button>
+                <div id="calcular">
+                    
+                </div>
+                <button class="boton" onclick="finalizar()">Finalizar compra</button>   
+                <div id="finalizado">
+                    
+                </div>                  
             </div>
-            <div id="calcular">
-
-            </div>
-            <div class="finalizar" id="finalizado">
-                <button class="boton" onclick="finalizar()">Finalizar compra</button>
-            </div>
-            <footer id = "pie">
-
+           
+            <footer id="pie" >
+                
+                <div class="final">
+                    <div>
+                        <ul>
+                            <li>Nombre : Raúl Hernández Cabello</li>
+                            <li>Teléfono: 600600600</li>
+                            <li>Correo: rhc0001@alu.medac.es</li>
+                            <li>Direccion: Centro comercial Nevada</li>
+                        </ul>
+                    </div>                    
+                    <div>
+                        <small>© 2021 RAUL</small>
+                    </div>
+                    <div >
+                        <img src="imagenes/medac-logo-azul-con-letras.svg">
+                    </div>
+                </div>
             </footer> 
-
         </body>
     </html>

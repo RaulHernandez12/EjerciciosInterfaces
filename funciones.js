@@ -19,16 +19,21 @@ function cambiar(numero){
 
 
 function sesion(numero){
-                      
-        alert(dia[numero].value +", " +hora[numero].value);
+          if(dia[numero].value == "" || dia[numero].value == null){
+                  alert("Debe seleccionar un día de la semana");
+                  
+          }else{
+                alert(dia[numero].value +", " +hora[numero].value);                
+          }            
+        
 }
 
 function finalizar(){
         if(butacas.length == null || butacas.length == 0){
-                document.getElementById("finalizado").innerHTML= ("<h3 id=\"entradas\"> Debe seleccionar al menos una butaca");
-                setTimeout("location.href='butacas.html'", 3000);
+                document.getElementById("finalizado").innerHTML= ("<h5 id=\"entradas\"> Debe seleccionar al menos una butaca</h5>");
+                
         }else{
-                document.getElementById("finalizado").innerHTML =("<h3 id=\"entradas\"> Su compra ha finalizado</h3>");
+                document.getElementById("finalizado").innerHTML =("<h5 id=\"entradas\"> Su compra ha finalizado</h5>");
                 setTimeout("location.href='portada.html'", 3000);
         }
 }
@@ -37,22 +42,37 @@ function precio(){
         var semana = new Date();
         var dia = semana.getDay();
         if(butacas.length == null || butacas.length == 0){
-                document.getElementById("calcular").innerHTML= ("<h3 id=\"entradas\"> Debe seleccionar al menos una butaca");
+                document.getElementById("calcular").innerHTML= ("<h5 id=\"entradas\"> Debe seleccionar al menos una butaca</h5>");               
         }
         else if(dia == 1 || dia == 2 || dia == 4){
-                document.getElementById("calcular").innerHTML= ("<h3 id=\"entradas\">El precio es: " + butacas.length*normal+"€");
+                document.getElementById("calcular").innerHTML= ("<h5 id=\"entradas\">El precio es: " + butacas.length*normal+"€</h5>");
         }else if(dia == 5 || dia == 6 || dia == 0){
-                document.getElementById("calcular").innerHTML= ("<h3 id=\"entradas\">El precio es: " + butacas.length*finde+"€");
+                document.getElementById("calcular").innerHTML= ("<h5 id=\"entradas\">El precio es: " + butacas.length*finde+"€</h5>");
         }else{
-                document.getElementById("calcular").innerHTML= ("<h3 id=\"entradas\">El precio es: " + butacas.length*espectador+"€");
+                document.getElementById("calcular").innerHTML= ("<h5 id=\"entradas\">El precio es: " + butacas.length*espectador+"€</h5>");
         }
 
 }
 
 
-function enlace(){
+function enlace(numero){
+        if(dia[numero].value == "" || dia[numero].value == null || hora[numero].value == "" || hora[numero].value == null ){
+                alert("Debe seleccionar un día de la semana y la hora");
+               
+        }else{
+               setTimeout("location.href='butacas.html'");
+                
+        }
         
 }
+
+
+function sala(){
+        var aleatorio = Math.floor(Math.random() * 5) + 1;
+        document.getElementById("sala"). innerHTML = ("Sala " + aleatorio);
+}
+
+
 /*function crearTabla(){
         var tabla = document.createElement('table');
         var tbody = document.createElement('tbody');

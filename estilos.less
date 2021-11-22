@@ -14,11 +14,17 @@
 @letraTexto:"merienda";
 @letra:"bunge"; 
 @titulo:50px;
-@azul:#3A8CE3;
+@azul:#304769;
 @tamanio:25px;
 @centrar: center;
 @borde : solid 1px @azul;
 
+body{
+    background-image: url(https://fondosmil.com/th/20689.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .tabla{
     border: solid;
     border-color: @azul;
@@ -28,8 +34,10 @@
     text-align: @centrar;
 }
 
-
-
+.display{
+    display: flex;
+    justify-content: space-around;
+}
 
 
 
@@ -43,52 +51,46 @@
 
 
 
-
-
 .menu{
+    .display;
     margin: 0;
     padding: 0px;
     text-align: center;
     line-height: 100px;
-    display: flex;
+   
     font-family: @letra;
     font-size: @tamanio;
 
         li {
             list-style: none;   
-            flex-grow: 1;
+            
             a{
-                display: block;
+                color:@azul;  
                 text-decoration: none;  
-                color:@azul;   
+                 
             } 
         }   
 } 
-
-
 
 table{
     .tabla
 }
 
-
 .pelicula{
 
-    display: flex;
+    .display;
     width: 100%;
-    justify-content: space-around;
     margin-top: 20px;
 
         .texto{
-
-            width: 75%;
-            display: flex;
+            .display;
+            width: 75%;            
             flex-direction: column;
-            justify-content: space-around;
+            
 
                 .horas{
-                    display: flex;
-                    justify-content: center;
+                    .display;                    
+                    font-family: @letraTexto;
                     select{
                         width: 30%;
                         margin-left: 20px;
@@ -102,8 +104,7 @@ table{
                 }
 
                 .enlaces{
-                    display: flex;
-                    justify-content: center;
+                    .display;
                 }
         }
         .img{
@@ -113,10 +114,6 @@ table{
                     width: 100%;
                 }
             }
-}
-
-.eternal{
-    display: flex;
 }
 
 .libre{
@@ -142,12 +139,7 @@ table{
     }
 }
 
-#entradas{
-    margin-top: 20px;
-    font-family: @letraTexto;
-    text-align: center;
-    
-}
+
 
 .boton{ 
     background-color: @azul;
@@ -164,14 +156,53 @@ table{
     margin-bottom: 20px;
 }
 
-.finalizar{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.final{
+    .display;
+    align-items: center;
+    font-family: @letraTexto;
+    color: @azul;
+    font-size: @tamanio;
+        ul{
+            list-style: none;
+            margin-top: 10px;
+        }
+        img{
+            width: 100%;
+        }
+        
 }
 
-footer{
-    display: flex;
-    justify-content: space-around;
+.salas{
+    .display;
+    font-family: @letraTexto;
+    color: @azul;
 }
 
+.lista{
+    .display;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: @letraTexto;
+    align-items: center;
+    .precios{       
+        width: 80%; 
+        color: @azul;
+        font-size: @tamanio;  
+        ul{
+            .display;
+            list-style: none;
+            font-family: @letraTexto;
+        }
+    }
+    button{
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+.trailer{
+    .display;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
