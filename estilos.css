@@ -1,3 +1,20 @@
+@keyframes animacionTexto {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @font-face {
   font-family: 'bunge';
   src: url('Bunge.ttf');
@@ -92,6 +109,7 @@ table {
 }
 .pelicula .img {
   width: 20%;
+  transition: width 4s, height 4s;
 }
 .pelicula .img img {
   width: 100%;
@@ -101,6 +119,7 @@ table {
   background-image: url("imagenes/Libre.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  transform: rotate(60px);
 }
 .seleccionado {
   cursor: pointer;
@@ -178,4 +197,24 @@ table {
 }
 .trailer video {
   width: 100%;
+}
+p {
+  animation-duration: 5s;
+  animation-name: animacionTexto;
+}
+li:hover {
+  transform: rotate(10deg);
+  transform-origin: top center;
+  transition-duration: 2s;
+}
+.img:hover {
+  width: 40%;
+  height: 800px;
+}
+header {
+  background-color: white;
+  transition: background 3s steps(5);
+}
+header:hover {
+  background-color: black;
 }

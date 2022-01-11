@@ -1,3 +1,11 @@
+@keyframes animacionTexto{ // esta animacion se hace en los parrafos de la seccion todas las peliculas
+    0%{ opacity: 0;}
+    25%{ opacity: 0.25;}
+    50%{ opacity: 0.50;}
+    75% { opacity: 0.75;}
+    100%{ opacity: 1;}
+}
+
 @font-face{
     font-family: 'bunge';
     src: url('Bunge.ttf');
@@ -109,9 +117,10 @@ table{
         }
         .img{
             width: 20%;
-
+            transition: width 4s, height 4s;
                 img{
                     width: 100%;
+                    
                 }
             }
 }
@@ -121,7 +130,10 @@ table{
     background-image: url("imagenes/Libre.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    transform: rotate(60px);
 }
+
+
 
 .seleccionado{
     cursor: pointer;
@@ -208,4 +220,32 @@ table{
         video{
             width: 100%;
         }
+}
+
+p{
+    animation-duration: 5s;
+    animation-name: animacionTexto;
+}
+
+//El siguiente transform se hace en el nombre de las secciones (Portada, todas las peliculas, etc)
+.menu{} ul{} li:hover{
+    transform: rotate(10deg);
+    transform-origin: top center;
+    transition-duration: 2s;
+}
+
+//Transicion que se realiza en las imagenes de todas las peliculas
+.img:hover{
+    width: 40%;
+    height: 800px;
+}
+
+//Step realizado sobre el header de la página
+header{
+    background-color: white;
+    transition: background 3s steps(5);
+}
+
+header:hover{
+    background-color: black;
 }

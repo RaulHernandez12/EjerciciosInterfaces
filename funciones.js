@@ -69,7 +69,7 @@ function enlace(numero){
 
 function sala(){
         var aleatorio = Math.floor(Math.random() * 5) + 1;
-        document.getElementById("sala"). innerHTML = ("Sala " + aleatorio);
+        document.getElementById("sala").innerHTML = ("Sala " + aleatorio);
 }
 
 
