@@ -202,10 +202,17 @@ p {
   animation-duration: 5s;
   animation-name: animacionTexto;
 }
-li:hover {
+form {
+  margin-top: 5vh;
+}
+.menu li:hover {
   transform: rotate(10deg);
   transform-origin: top center;
   transition-duration: 2s;
+}
+small {
+  display: flex;
+  justify-content: center;
 }
 .img:hover {
   width: 40%;

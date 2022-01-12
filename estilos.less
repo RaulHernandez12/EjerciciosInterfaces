@@ -227,13 +227,22 @@ p{
     animation-name: animacionTexto;
 }
 
+form{
+    margin-top: 5vh;
+}
 //El siguiente transform se hace en el nombre de las secciones (Portada, todas las peliculas, etc)
-.menu{} ul{} li:hover{
-    transform: rotate(10deg);
-    transform-origin: top center;
-    transition-duration: 2s;
+.menu{
+    li:hover{
+            transform: rotate(10deg);
+            transform-origin: top center;
+             transition-duration: 2s;
+            }
 }
 
+small{
+    display: flex;
+    justify-content: center;
+}
 //Transicion que se realiza en las imagenes de todas las peliculas
 .img:hover{
     width: 40%;
